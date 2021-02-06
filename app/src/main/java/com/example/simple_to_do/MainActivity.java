@@ -1,12 +1,13 @@
 package com.example.simple_to_do;
 
 import android.os.Bundle;
-import org.apache.commons.io.FileUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 // will load items by reading every line of the data file
     private void loadItems(){
         try {
-            items = new ArrayList<>(FileUtils.readLines(getDatafile(), Charset.defaultCharset()));
+            items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
         }
         catch (IOException e) {
             Log.e("MainActivity", "Error reading items", e);
