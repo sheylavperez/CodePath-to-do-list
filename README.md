@@ -4,7 +4,7 @@
 
 Submitted by: **Sheyla Perez**
 
-Time spent: **25** hours spent in total
+Time spent: **30** hours spent in total
 
 ## User Stories
 
